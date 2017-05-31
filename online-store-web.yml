@@ -73,7 +73,7 @@ zuul:
   routes:
     edge-service:
       path: /api/**
-      url: http://${USER_SERVICE_ENDPOINT}:9999
+      url: http://${EDGE_SERVICE_ENDPOINT}:9999
     auth-service:
       path: /user/**
       url: http://${USER_SERVICE_ENDPOINT}:8181/uaa/user
