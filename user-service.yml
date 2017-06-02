@@ -52,7 +52,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://discovery-service:8761/eureka/
+      defaultZone: http://${DISCOVERY_SERVER}:8761/eureka/
 ---
 spring:
   profiles: test
